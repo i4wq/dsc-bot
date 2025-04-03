@@ -661,4 +661,4 @@ client.on('ready', async () => {
   });
 });
 
-client.login("MTI2NTAxODYzNzI4NzI5NzE5OQ.Gv86bI.NYdCcxQ7YbVyY4aq4AkI6M4-v-OMEd0Th6jmSY").catch((err)=> console.log("❌ Token are not working"));
+client.login("MTI2NTAxODYzNzI4NzI5NzE5OQ.G-y-ES.Y98ZOk3HV852n1XExjjDFyEKUXRa69UKhlZz60").catch((err)=> console.log("❌ Token are not working"));
