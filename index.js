@@ -1,3 +1,18 @@
+const fs = require('fs');
+const path = './Json-db/BotMaker/BotMakerSub.json';
+
+// تحقق مما إذا كان الملف غير موجود، وقم بإنشائه
+if (!fs.existsSync('./Json-db/BotMaker')) {
+    fs.mkdirSync('./Json-db/BotMaker', { recursive: true });
+}
+
+if (!fs.existsSync(path)) {
+    fs.writeFileSync(path, '{}', 'utf8');
+}
+
+// الآن يمكن استخدام الملف بأمان
+const Database = require('st.db');
+const db = new Database(path);
 
 const express = require("express")
 const app = express()
