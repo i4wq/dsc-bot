@@ -1,0 +1,10 @@
+const fs = require('fs');
+const path = './Json-db/BotMaker/BotMakerSub.json';
+
+// تحقق مما إذا كان الملف موجودًا، وإذا لم يكن موجودًا، قم بإنشائه
+if (!fs.existsSync(path)) {
+    fs.writeFileSync(path, '{}', 'utf8');
+}
+
+const Database = require('st.db');
+const db = new Database(path);
